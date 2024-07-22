@@ -145,18 +145,19 @@ section span img {
 /* started to desgin the footer of the website */
 .row {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .footer-col ul li {
-    list-style: none;
-    padding: 2px;
+    /* list-style: none; */
+    /* removeing list style none because to know all footer links are different */
+    padding: 3px;
 }
 
 .footer-col ul li a {
     text-decoration: none;
     color: black;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .container {
@@ -166,8 +167,15 @@ section span img {
 
 .footer-col h4 {
     position: relative;
-    left: 40px;
-    font-size: 25px;
+    left: 38px;
+}
+
+.footer-col p {
+    max-width: 17.5%;
+    font-size: 14px;
+    position: absolute;
+    right: 60px;
+    margin: 0;
 }
 
 /* responsive for mobile */
@@ -179,13 +187,20 @@ section span img {
 
     .footer-col h4 {
         position: relative;
-        left: 40px;
-        font-size: 22px;
+        left: 25px;
     }
 
     .container {
         max-width: 100%;
         margin: auto;
+    }
+
+    .footer-col p {
+        max-width: 78%;
+        font-size: 14px;
+        position: absolute;
+        right: 47px;
+        margin: 0;
     }
 }
 
@@ -199,6 +214,13 @@ section span img {
     .footer-col h4 {
         position: relative;
         left: 33px;
-        font-size: 22px;
+    }
+
+    .footer-col p {
+        max-width: 42%;
+        font-size: 14px;
+        position: absolute;
+        right: 43px;
+        margin: 0;
     }
 }
